@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6F138063-E6AE-4031-BA1F-89D73CEC352D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProyecContable</RootNamespace>
+    <AssemblyName>ProyecContable</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cuentas\CreacionCuenta\FrmCrearCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuentas\CreacionCuenta\FrmCrearCuentas.Designer.cs">
+      <DependentUpon>FrmCrearCuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cuentas\CreacionCuenta\FrmCrearLaCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuentas\CreacionCuenta\FrmCrearLaCuenta.Designer.cs">
+      <DependentUpon>FrmCrearLaCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cuentas\CreacionCuenta\FrmCrearLaCuentaFinales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuentas\CreacionCuenta\FrmCrearLaCuentaFinales.Designer.cs">
+      <DependentUpon>FrmCrearLaCuentaFinales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cuentas\CreacionCuenta\FrmEditarCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuentas\CreacionCuenta\FrmEditarCuenta.Designer.cs">
+      <DependentUpon>FrmEditarCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cuentas\CreacionCuenta\FrmReporteCuentaContable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuentas\CreacionCuenta\FrmReporteCuentaContable.Designer.cs">
+      <DependentUpon>FrmReporteCuentaContable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cuentas\FrmMenuCreacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuentas\FrmMenuCreacion.Designer.cs">
+      <DependentUpon>FrmMenuCreacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estados\Alerta\ClassAlertActualizado.cs" />
+    <Compile Include="Estados\Alerta\ClassAlertError.cs" />
+    <Compile Include="Estados\Alerta\ClassAlertGuardado.cs" />
+    <Compile Include="Estados\Alerta\ClassColorAlerta.cs" />
+    <Compile Include="Estados\Alerta\ClassAlertValidar.cs" />
+    <Compile Include="Estados\ClassToast.cs" />
+    <Compile Include="Estados\FrmMensaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estados\FrmMensaje.Designer.cs">
+      <DependentUpon>FrmMensaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estados\FrmPregunta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estados\FrmPregunta.Designer.cs">
+      <DependentUpon>FrmPregunta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estados\FrmPreguntaBorrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estados\FrmPreguntaBorrar.Designer.cs">
+      <DependentUpon>FrmPreguntaBorrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Niveles\FrmNivel2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Niveles\FrmNivel2.Designer.cs">
+      <DependentUpon>FrmNivel2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Niveles\MenuCrearCuenta\FrmMenuCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Niveles\MenuCrearCuenta\FrmMenuCuentas.Designer.cs">
+      <DependentUpon>FrmMenuCuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Niveles\Nivel2\FrmNivel2Editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Niveles\Nivel2\FrmNivel2Editar.Designer.cs">
+      <DependentUpon>FrmNivel2Editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Niveles\Nivel4\FrmNivel4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Niveles\Nivel4\FrmNivel4.Designer.cs">
+      <DependentUpon>FrmNivel4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Niveles\Nivel5\FrmNivel5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Niveles\Nivel5\FrmNivel5.Designer.cs">
+      <DependentUpon>FrmNivel5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Niveles\Niver3\FrmNivel3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Niveles\Niver3\FrmNivel3.Designer.cs">
+      <DependentUpon>FrmNivel3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Cuentas\CreacionCuenta\FrmCrearCuentas.resx">
+      <DependentUpon>FrmCrearCuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuentas\CreacionCuenta\FrmCrearLaCuenta.resx">
+      <DependentUpon>FrmCrearLaCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuentas\CreacionCuenta\FrmCrearLaCuentaFinales.resx">
+      <DependentUpon>FrmCrearLaCuentaFinales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuentas\CreacionCuenta\FrmEditarCuenta.resx">
+      <DependentUpon>FrmEditarCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuentas\CreacionCuenta\FrmReporteCuentaContable.resx">
+      <DependentUpon>FrmReporteCuentaContable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuentas\FrmMenuCreacion.resx">
+      <DependentUpon>FrmMenuCreacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estados\FrmMensaje.resx">
+      <DependentUpon>FrmMensaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estados\FrmPregunta.resx">
+      <DependentUpon>FrmPregunta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estados\FrmPreguntaBorrar.resx">
+      <DependentUpon>FrmPreguntaBorrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Niveles\FrmNivel2.resx">
+      <DependentUpon>FrmNivel2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Niveles\MenuCrearCuenta\FrmMenuCuentas.resx">
+      <DependentUpon>FrmMenuCuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Niveles\Nivel2\FrmNivel2Editar.resx">
+      <DependentUpon>FrmNivel2Editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Niveles\Nivel4\FrmNivel4.resx">
+      <DependentUpon>FrmNivel4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Niveles\Nivel5\FrmNivel5.resx">
+      <DependentUpon>FrmNivel5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Niveles\Niver3\FrmNivel3.resx">
+      <DependentUpon>FrmNivel3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\CADProContable\CADProContable.csproj">
+      <Project>{90cd5d01-4863-4e28-bb76-4c54f94e9183}</Project>
+      <Name>CADProContable</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReportesContables\ReportesContables.csproj">
+      <Project>{6f65d23e-fda5-4fa5-99c7-b059513abefd}</Project>
+      <Name>ReportesContables</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Estados\ToastIma\ok_32px.png" />
+    <Content Include="Estados\ToastIma\Warning_32px.png" />
+    <None Include="Resources\close_window_32px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
