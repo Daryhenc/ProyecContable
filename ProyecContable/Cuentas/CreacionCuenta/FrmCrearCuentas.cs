@@ -112,6 +112,7 @@ namespace ProyecContable.Cuentas.CreacionCuenta
             Convert.ToInt32(CbNivel1.SelectedValue), Convert.ToInt32(CbNivel2.SelectedValue),
             Convert.ToInt32(CbNivel1.SelectedValue));
             FrmCrear.ShowDialog();
+            RefreshCb(1);
         }
         private void BtnCrear2_Click(object sender, EventArgs e)
         {
@@ -122,7 +123,8 @@ namespace ProyecContable.Cuentas.CreacionCuenta
             FrmCrear = new FrmCrearLaCuenta(2,
             Convert.ToInt32(CbNivel1.SelectedValue), Convert.ToInt32(CbNivel2.SelectedValue),
             Convert.ToInt32(CbNivel2.SelectedValue));
-            FrmCrear.ShowDialog();
+            FrmCrear.ShowDialog();   
+            RefreshCb(2);
         }
         private void BtnCrear3_Click(object sender, EventArgs e)
         {
@@ -136,6 +138,7 @@ namespace ProyecContable.Cuentas.CreacionCuenta
             Convert.ToInt32(CbNivel4.SelectedValue), Convert.ToInt32(CbNivel5.SelectedValue), 
             Convert.ToInt32(CbNivel3.SelectedValue));
             FrmCrearCuentaTrans.ShowDialog();
+            RefreshCb(3);
         }
         private void BtnCrear4_Click(object sender, EventArgs e)
         {
@@ -153,6 +156,7 @@ namespace ProyecContable.Cuentas.CreacionCuenta
             Convert.ToInt32(CbNivel4.SelectedValue), Convert.ToInt32(CbNivel5.SelectedValue),
             Convert.ToInt32(CbNivel4.SelectedValue));
             FrmCrearCuentaTrans.ShowDialog();
+            RefreshCb(4);
         }
         private void BtnCrear5_Click(object sender, EventArgs e)
         {
@@ -170,6 +174,7 @@ namespace ProyecContable.Cuentas.CreacionCuenta
             Convert.ToInt32(CbNivel4.SelectedValue), Convert.ToInt32(CbNivel5.SelectedValue),
             Convert.ToInt32(CbNivel5.SelectedValue));
             FrmCrearCuentaTrans.ShowDialog();
+            RefreshCb(5);
         }
         private void BtnEditar1_Click(object sender, EventArgs e)
         {
@@ -181,6 +186,7 @@ namespace ProyecContable.Cuentas.CreacionCuenta
             Convert.ToInt32(CbNivel3.SelectedValue), Convert.ToInt32(CbNivel4.SelectedValue), Convert.ToInt32(CbNivel5.SelectedValue),
             Convert.ToInt32(CbNivel1.SelectedValue), TxtCodigoClase.Text, CbNivel1.Text);
             FrmEditar.ShowDialog();
+            RefreshCb(1);
         }
         private void BtnEditar2_Click(object sender, EventArgs e)
         {
@@ -192,6 +198,7 @@ namespace ProyecContable.Cuentas.CreacionCuenta
             Convert.ToInt32(CbNivel3.SelectedValue), Convert.ToInt32(CbNivel4.SelectedValue), Convert.ToInt32(CbNivel5.SelectedValue),
             Convert.ToInt32(CbNivel2.SelectedValue), TxtCodigoGrupo.Text, CbNivel2.Text);
             FrmEditar.ShowDialog();
+            RefreshCb(2);
         }
         private void BtnEditar3_Click(object sender, EventArgs e)
         {
@@ -203,6 +210,7 @@ namespace ProyecContable.Cuentas.CreacionCuenta
             Convert.ToInt32(CbNivel3.SelectedValue), Convert.ToInt32(CbNivel4.SelectedValue), Convert.ToInt32(CbNivel5.SelectedValue),
             Convert.ToInt32(CbNivel3.SelectedValue), TxtCodigoCuenta.Text, CbNivel3.Text);
             FrmEditar.ShowDialog();
+            RefreshCb(3);
         }
         private void BtnEditar4_Click(object sender, EventArgs e)
         {
@@ -214,6 +222,7 @@ namespace ProyecContable.Cuentas.CreacionCuenta
             Convert.ToInt32(CbNivel3.SelectedValue), Convert.ToInt32(CbNivel4.SelectedValue), Convert.ToInt32(CbNivel5.SelectedValue),
             Convert.ToInt32(CbNivel4.SelectedValue), TxtCodigoSubCuenta.Text, CbNivel4.Text);
             FrmEditar.ShowDialog();
+            RefreshCb(4);
         }
         private void BtnEditar5_Click(object sender, EventArgs e)
         {
@@ -225,6 +234,7 @@ namespace ProyecContable.Cuentas.CreacionCuenta
             Convert.ToInt32(CbNivel3.SelectedValue), Convert.ToInt32(CbNivel4.SelectedValue), Convert.ToInt32(CbNivel5.SelectedValue),
             Convert.ToInt32(CbNivel5.SelectedValue), TxtCodigoSubCuenta.Text, CbNivel4.Text);
             FrmEditar.ShowDialog();
+            RefreshCb(5);
         }
         private void BtnBorrar1_Click(object sender, EventArgs e)
         {
@@ -384,6 +394,72 @@ namespace ProyecContable.Cuentas.CreacionCuenta
                 {
                     Mensajes = new ClassToast(ClassColorAlerta.Alerta.Error.ToString(), "ERROR", "Problemas entre tablas enlazadas.");
                 }
+            }
+        }
+
+
+
+
+        private void RefreshCb(int IDCount)
+        {
+            if (IDCount == 1)
+            {
+                // LLENAR CODIGO
+                CbClase = new ClassLlenarCbClase();
+                CbClase.LLenarCodigoClase(Convert.ToInt32(CbNivel1.SelectedValue), TxtCodigoClase);
+                // LLENAR GRUPO
+                CbGrupo = new ClassLLenarCbGrupo();
+                CbGrupo.Llenar(CbNivel2, Convert.ToInt32(CbNivel1.SelectedValue), TxtCodigoGrupo);
+                // LLENAR CUENTA
+                CbCuenta = new ClassLlenarCbCuenta();
+                CbCuenta.Llenar(CbNivel3, Convert.ToInt32(CbNivel2.SelectedValue), RbTransaccional3, TxtCodigoCuenta);
+                // LLENAR SUB CUENTA
+                CbSubCuenta = new ClassLlenarCbSubCuenta();
+                CbSubCuenta.Llenar(CbNivel4, Convert.ToInt32(CbNivel3.SelectedValue), RbTransaccional4, TxtCodigoSubCuenta);
+                // LLENAR aUXILIAR
+                CbAuxiliar = new ClassLlenarCbAuxiliar();
+                CbAuxiliar.Llenar(CbNivel5, Convert.ToInt32(CbNivel4.SelectedValue), RbTransaccional5, TxtCodigoAuxiliar);
+                return;
+            }
+            if (IDCount == 2)
+            {
+                // LLENAR CODIGO GRUPO
+                CbGrupo = new ClassLLenarCbGrupo();
+                CbGrupo.LLenarCodigoGrupo(Convert.ToInt32(CbNivel2.SelectedValue), TxtCodigoGrupo);
+                // LLENAR CUENTA
+                CbCuenta = new ClassLlenarCbCuenta();
+                CbCuenta.Llenar(CbNivel3, Convert.ToInt32(CbNivel2.SelectedValue), RbTransaccional3, TxtCodigoCuenta);
+                // LLENAR SUB CUENTA
+                CbSubCuenta = new ClassLlenarCbSubCuenta();
+                CbSubCuenta.Llenar(CbNivel4, Convert.ToInt32(CbNivel3.SelectedValue), RbTransaccional4, TxtCodigoSubCuenta);
+                // LLENAR aUXILIAR
+                CbAuxiliar = new ClassLlenarCbAuxiliar();
+                CbAuxiliar.Llenar(CbNivel5, Convert.ToInt32(CbNivel4.SelectedValue), RbTransaccional5, TxtCodigoAuxiliar);
+            }
+            if (IDCount == 3)
+            {
+                // LLENAR CODIGO CUENTA
+                CbCuenta.LLenarCodigoCuenta(Convert.ToInt32(CbNivel3.SelectedValue), RbTransaccional3, TxtCodigoCuenta);
+                // LLENAR SUB CUENTA
+                CbSubCuenta = new ClassLlenarCbSubCuenta();
+                CbSubCuenta.Llenar(CbNivel4, Convert.ToInt32(CbNivel3.SelectedValue), RbTransaccional4, TxtCodigoSubCuenta);
+                // LLENAR aUXILIAR
+                CbAuxiliar = new ClassLlenarCbAuxiliar();
+                CbAuxiliar.Llenar(CbNivel5, Convert.ToInt32(CbNivel4.SelectedValue), RbTransaccional5, TxtCodigoAuxiliar);
+            }
+            if (IDCount == 4)
+            {
+                // LLENAR CODIGO SUB CUENTA
+                CbSubCuenta.LLenarCodigoSubCuenta(Convert.ToInt32(CbNivel4.SelectedValue), RbTransaccional4, TxtCodigoSubCuenta);
+                // LLENAR aUXILIAR
+                CbAuxiliar = new ClassLlenarCbAuxiliar();
+                CbAuxiliar.Llenar(CbNivel5, Convert.ToInt32(CbNivel4.SelectedValue), RbTransaccional5, TxtCodigoAuxiliar);
+            }
+            if (IDCount == 5)
+            {
+                // LLENAR aUXILIAR
+                CbAuxiliar = new ClassLlenarCbAuxiliar();
+                CbAuxiliar.LLenarCodigoAuxiliar(Convert.ToInt32(CbNivel5.SelectedValue), RbTransaccional5, TxtCodigoAuxiliar);
             }
         }
     }
