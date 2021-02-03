@@ -16,6 +16,7 @@ namespace ProyecContable.Cuentas.CreacionCuenta
         public FrmCrearCuentas()
         {
             InitializeComponent();
+            //LLama todos los combo
             CbClase = new ClassLlenarCbClase();
             CbClase.Llenar(CbNivel1, TxtCodigoClase);
             CbGrupo = new ClassLLenarCbGrupo();
