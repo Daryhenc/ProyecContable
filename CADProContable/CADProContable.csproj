@@ -43,6 +43,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Asiento\AsientoBusqueda\ClassDgvCuentaBusqueda.cs" />
+    <Compile Include="Asiento\AsientoCuenta\CADAsientoCuenta.cs" />
+    <Compile Include="Asiento\AsientoDetalle\CADAsientoDetalle.cs" />
+    <Compile Include="Asiento\Comprobante\CADTipoComprobante.cs" />
+    <Compile Include="Asiento\Comprobante\DSComprobante.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSComprobante.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Asiento\DSAsientos.cs">
+      <DependentUpon>DSAsientos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Asiento\DSAsientos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSAsientos.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Niveles\CMovimiento\CADCoDMovimiento.cs" />
     <Compile Include="Niveles\Creacion\Nivel2\ClassDgvLLenar_2.cs" />
     <Compile Include="Niveles\Creacion\Nivel3\ClassDgvLlenar_3.cs" />
@@ -85,6 +102,28 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Asiento\Comprobante\DSComprobante.xsc">
+      <DependentUpon>DSComprobante.xsd</DependentUpon>
+    </None>
+    <None Include="Asiento\Comprobante\DSComprobante.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSComprobante.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Asiento\Comprobante\DSComprobante.xss">
+      <DependentUpon>DSComprobante.xsd</DependentUpon>
+    </None>
+    <None Include="Asiento\DSAsientos.xsc">
+      <DependentUpon>DSAsientos.xsd</DependentUpon>
+    </None>
+    <None Include="Asiento\DSAsientos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSAsientos.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Asiento\DSAsientos.xss">
+      <DependentUpon>DSAsientos.xsd</DependentUpon>
+    </None>
     <None Include="Niveles\DSNiveles.xsc">
       <DependentUpon>DSNiveles.xsd</DependentUpon>
     </None>

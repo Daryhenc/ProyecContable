@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Asientos\CreacionAsiento\FrmCreacionAsiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Asientos\CreacionAsiento\FrmCreacionAsiento.Designer.cs">
+      <DependentUpon>FrmCreacionAsiento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cuentas\CreacionCuenta\FrmCrearCuentas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +156,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Asientos\CreacionAsiento\FrmCreacionAsiento.resx">
+      <DependentUpon>FrmCreacionAsiento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cuentas\CreacionCuenta\FrmCrearCuentas.resx">
       <DependentUpon>FrmCrearCuentas.cs</DependentUpon>
     </EmbeddedResource>

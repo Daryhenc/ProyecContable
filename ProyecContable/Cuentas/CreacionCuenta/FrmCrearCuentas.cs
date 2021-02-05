@@ -232,7 +232,7 @@ namespace ProyecContable.Cuentas.CreacionCuenta
             }
             FrmEditar = new FrmEditarCuenta(5, Convert.ToInt32(CbNivel1.SelectedValue), Convert.ToInt32(CbNivel2.SelectedValue),
             Convert.ToInt32(CbNivel3.SelectedValue), Convert.ToInt32(CbNivel4.SelectedValue), Convert.ToInt32(CbNivel5.SelectedValue),
-            Convert.ToInt32(CbNivel5.SelectedValue), TxtCodigoSubCuenta.Text, CbNivel4.Text);
+            Convert.ToInt32(CbNivel5.SelectedValue), TxtCodigoAuxiliar.Text, CbNivel5.Text);
             FrmEditar.ShowDialog();
             RefreshCb(5);
         }
@@ -270,6 +270,7 @@ namespace ProyecContable.Cuentas.CreacionCuenta
                     Mensajes = new ClassToast(ClassColorAlerta.Alerta.Error.ToString(), "ERROR", "Problemas entre tablas enlazadas.");
                 }
             }
+            RefreshCb(1);
         }
         private void BtnBorrar2_Click(object sender, EventArgs e)
         {
@@ -302,6 +303,7 @@ namespace ProyecContable.Cuentas.CreacionCuenta
                     Mensajes = new ClassToast(ClassColorAlerta.Alerta.Error.ToString(), "ERROR", "Problemas entre tablas enlazadas.");
                 }
             }
+            RefreshCb(2);
         }
         private void BtnBorrar3_Click(object sender, EventArgs e)
         {
@@ -335,6 +337,7 @@ namespace ProyecContable.Cuentas.CreacionCuenta
                     Mensajes = new ClassToast(ClassColorAlerta.Alerta.Error.ToString(), "ERROR", "Problemas entre tablas enlazadas.");
                 }
             }
+            RefreshCb(3);
         }
         private void BtnBorrar4_Click(object sender, EventArgs e)
         {
@@ -365,6 +368,7 @@ namespace ProyecContable.Cuentas.CreacionCuenta
                     Mensajes = new ClassToast(ClassColorAlerta.Alerta.Error.ToString(), "ERROR", "Problemas entre tablas enlazadas.");
                 }
             }
+            RefreshCb(4);
         }
         private void BtnBorrar5_Click(object sender, EventArgs e)
         {
@@ -395,6 +399,7 @@ namespace ProyecContable.Cuentas.CreacionCuenta
                     Mensajes = new ClassToast(ClassColorAlerta.Alerta.Error.ToString(), "ERROR", "Problemas entre tablas enlazadas.");
                 }
             }
+            RefreshCb(5);
         }
 
 
@@ -459,7 +464,7 @@ namespace ProyecContable.Cuentas.CreacionCuenta
             {
                 // LLENAR aUXILIAR
                 CbAuxiliar = new ClassLlenarCbAuxiliar();
-                CbAuxiliar.LLenarCodigoAuxiliar(Convert.ToInt32(CbNivel5.SelectedValue), RbTransaccional5, TxtCodigoAuxiliar);
+                CbAuxiliar.Llenar(CbNivel5, Convert.ToInt32(CbNivel4.SelectedValue), RbTransaccional5, TxtCodigoAuxiliar);
             }
         }
     }
