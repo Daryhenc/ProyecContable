@@ -1,6 +1,6 @@
-﻿namespace ProyecContable.Cuentas
+﻿namespace ProyecContable.Asientos
 {
-    partial class FrmMenuCreacion
+    partial class FrmMenuAsiento
     {
         /// <summary>
         /// Required designer variable.
@@ -28,28 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenuCreacion));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenuAsiento));
+            this.PanelContenedorHijo = new System.Windows.Forms.Panel();
             this.PanelMenuCerrar = new System.Windows.Forms.Panel();
             this.BtnReporte = new System.Windows.Forms.Button();
+            this.BtnBusqueda = new System.Windows.Forms.Button();
             this.BtnNuevo = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.PanelContenedorHijo = new System.Windows.Forms.Panel();
-            this.TTMensasje = new System.Windows.Forms.ToolTip(this.components);
             this.PanelMenuCerrar.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // PanelContenedorHijo
+            // 
+            this.PanelContenedorHijo.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.PanelContenedorHijo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelContenedorHijo.Location = new System.Drawing.Point(0, 61);
+            this.PanelContenedorHijo.Name = "PanelContenedorHijo";
+            this.PanelContenedorHijo.Size = new System.Drawing.Size(1261, 779);
+            this.PanelContenedorHijo.TabIndex = 243;
             // 
             // PanelMenuCerrar
             // 
             this.PanelMenuCerrar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.PanelMenuCerrar.Controls.Add(this.BtnReporte);
+            this.PanelMenuCerrar.Controls.Add(this.BtnBusqueda);
             this.PanelMenuCerrar.Controls.Add(this.BtnNuevo);
             this.PanelMenuCerrar.Controls.Add(this.label2);
             this.PanelMenuCerrar.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelMenuCerrar.Location = new System.Drawing.Point(0, 0);
             this.PanelMenuCerrar.Name = "PanelMenuCerrar";
             this.PanelMenuCerrar.Size = new System.Drawing.Size(1261, 61);
-            this.PanelMenuCerrar.TabIndex = 240;
+            this.PanelMenuCerrar.TabIndex = 242;
             // 
             // BtnReporte
             // 
@@ -57,12 +66,25 @@
             this.BtnReporte.FlatAppearance.BorderSize = 0;
             this.BtnReporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnReporte.Image = ((System.Drawing.Image)(resources.GetObject("BtnReporte.Image")));
-            this.BtnReporte.Location = new System.Drawing.Point(1101, 0);
+            this.BtnReporte.Location = new System.Drawing.Point(1021, 0);
             this.BtnReporte.Name = "BtnReporte";
             this.BtnReporte.Size = new System.Drawing.Size(80, 61);
-            this.BtnReporte.TabIndex = 4;
+            this.BtnReporte.TabIndex = 6;
             this.BtnReporte.UseVisualStyleBackColor = true;
             this.BtnReporte.Click += new System.EventHandler(this.BtnReporte_Click);
+            // 
+            // BtnBusqueda
+            // 
+            this.BtnBusqueda.Dock = System.Windows.Forms.DockStyle.Right;
+            this.BtnBusqueda.FlatAppearance.BorderSize = 0;
+            this.BtnBusqueda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnBusqueda.Image = ((System.Drawing.Image)(resources.GetObject("BtnBusqueda.Image")));
+            this.BtnBusqueda.Location = new System.Drawing.Point(1101, 0);
+            this.BtnBusqueda.Name = "BtnBusqueda";
+            this.BtnBusqueda.Size = new System.Drawing.Size(80, 61);
+            this.BtnBusqueda.TabIndex = 5;
+            this.BtnBusqueda.UseVisualStyleBackColor = true;
+            this.BtnBusqueda.Click += new System.EventHandler(this.BtnBusqueda_Click);
             // 
             // BtnNuevo
             // 
@@ -84,20 +106,11 @@
             this.label2.ForeColor = System.Drawing.Color.Navy;
             this.label2.Location = new System.Drawing.Point(26, 12);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(392, 37);
+            this.label2.Size = new System.Drawing.Size(468, 37);
             this.label2.TabIndex = 2;
-            this.label2.Text = "CUENTAS CONTABLES";
+            this.label2.Text = "MOVIMIENTOS CONTABLES";
             // 
-            // PanelContenedorHijo
-            // 
-            this.PanelContenedorHijo.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.PanelContenedorHijo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelContenedorHijo.Location = new System.Drawing.Point(0, 61);
-            this.PanelContenedorHijo.Name = "PanelContenedorHijo";
-            this.PanelContenedorHijo.Size = new System.Drawing.Size(1261, 779);
-            this.PanelContenedorHijo.TabIndex = 241;
-            // 
-            // FrmMenuCreacion
+            // FrmMenuAsiento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -105,9 +118,8 @@
             this.Controls.Add(this.PanelContenedorHijo);
             this.Controls.Add(this.PanelMenuCerrar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmMenuCreacion";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmMenuCreacion";
+            this.Name = "FrmMenuAsiento";
+            this.Text = "FrmMenuAsiento";
             this.PanelMenuCerrar.ResumeLayout(false);
             this.PanelMenuCerrar.PerformLayout();
             this.ResumeLayout(false);
@@ -116,11 +128,11 @@
 
         #endregion
 
+        private System.Windows.Forms.Panel PanelContenedorHijo;
         private System.Windows.Forms.Panel PanelMenuCerrar;
+        private System.Windows.Forms.Button BtnNuevo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button BtnReporte;
-        private System.Windows.Forms.Button BtnNuevo;
-        private System.Windows.Forms.Panel PanelContenedorHijo;
-        private System.Windows.Forms.ToolTip TTMensasje;
+        private System.Windows.Forms.Button BtnBusqueda;
     }
 }

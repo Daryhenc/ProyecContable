@@ -127,6 +127,7 @@
             this.BtnMovimientos.TabIndex = 5;
             this.BtnMovimientos.Text = "MOVIMIENTOS";
             this.BtnMovimientos.UseVisualStyleBackColor = true;
+            this.BtnMovimientos.Click += new System.EventHandler(this.BtnMovimientos_Click);
             // 
             // BtnCuentas
             // 

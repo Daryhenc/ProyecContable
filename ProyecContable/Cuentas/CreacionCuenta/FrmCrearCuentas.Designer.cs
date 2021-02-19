@@ -140,9 +140,9 @@
             this.CbNivel1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CbNivel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CbNivel1.FormattingEnabled = true;
-            this.CbNivel1.Location = new System.Drawing.Point(643, 154);
+            this.CbNivel1.Location = new System.Drawing.Point(580, 154);
             this.CbNivel1.Name = "CbNivel1";
-            this.CbNivel1.Size = new System.Drawing.Size(319, 28);
+            this.CbNivel1.Size = new System.Drawing.Size(426, 28);
             this.CbNivel1.TabIndex = 7;
             this.CbNivel1.SelectionChangeCommitted += new System.EventHandler(this.CbNivel1_SelectionChangeCommitted);
             // 
@@ -151,7 +151,7 @@
             this.BtnCrear1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.BtnCrear1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCrear1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.BtnCrear1.Location = new System.Drawing.Point(991, 154);
+            this.BtnCrear1.Location = new System.Drawing.Point(1030, 154);
             this.BtnCrear1.Name = "BtnCrear1";
             this.BtnCrear1.Size = new System.Drawing.Size(66, 28);
             this.BtnCrear1.TabIndex = 9;
@@ -172,7 +172,7 @@
             this.BtnCrear2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.BtnCrear2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCrear2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.BtnCrear2.Location = new System.Drawing.Point(991, 209);
+            this.BtnCrear2.Location = new System.Drawing.Point(1030, 209);
             this.BtnCrear2.Name = "BtnCrear2";
             this.BtnCrear2.Size = new System.Drawing.Size(66, 28);
             this.BtnCrear2.TabIndex = 14;
@@ -196,9 +196,9 @@
             this.CbNivel2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CbNivel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CbNivel2.FormattingEnabled = true;
-            this.CbNivel2.Location = new System.Drawing.Point(643, 209);
+            this.CbNivel2.Location = new System.Drawing.Point(580, 209);
             this.CbNivel2.Name = "CbNivel2";
-            this.CbNivel2.Size = new System.Drawing.Size(319, 28);
+            this.CbNivel2.Size = new System.Drawing.Size(426, 28);
             this.CbNivel2.TabIndex = 12;
             this.CbNivel2.SelectionChangeCommitted += new System.EventHandler(this.CbNivel2_SelectionChangeCommitted);
             // 
@@ -207,7 +207,7 @@
             this.BtnCrear3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.BtnCrear3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCrear3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.BtnCrear3.Location = new System.Drawing.Point(991, 265);
+            this.BtnCrear3.Location = new System.Drawing.Point(1030, 265);
             this.BtnCrear3.Name = "BtnCrear3";
             this.BtnCrear3.Size = new System.Drawing.Size(66, 28);
             this.BtnCrear3.TabIndex = 18;
@@ -231,9 +231,9 @@
             this.CbNivel3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CbNivel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CbNivel3.FormattingEnabled = true;
-            this.CbNivel3.Location = new System.Drawing.Point(643, 265);
+            this.CbNivel3.Location = new System.Drawing.Point(580, 265);
             this.CbNivel3.Name = "CbNivel3";
-            this.CbNivel3.Size = new System.Drawing.Size(319, 28);
+            this.CbNivel3.Size = new System.Drawing.Size(426, 28);
             this.CbNivel3.TabIndex = 16;
             this.CbNivel3.SelectionChangeCommitted += new System.EventHandler(this.CbNivel3_SelectionChangeCommitted);
             // 
@@ -242,7 +242,7 @@
             this.BtnCrear4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.BtnCrear4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCrear4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.BtnCrear4.Location = new System.Drawing.Point(991, 319);
+            this.BtnCrear4.Location = new System.Drawing.Point(1030, 319);
             this.BtnCrear4.Name = "BtnCrear4";
             this.BtnCrear4.Size = new System.Drawing.Size(66, 28);
             this.BtnCrear4.TabIndex = 22;
@@ -266,9 +266,9 @@
             this.CbNivel4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CbNivel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CbNivel4.FormattingEnabled = true;
-            this.CbNivel4.Location = new System.Drawing.Point(643, 319);
+            this.CbNivel4.Location = new System.Drawing.Point(580, 319);
             this.CbNivel4.Name = "CbNivel4";
-            this.CbNivel4.Size = new System.Drawing.Size(319, 28);
+            this.CbNivel4.Size = new System.Drawing.Size(426, 28);
             this.CbNivel4.TabIndex = 20;
             this.CbNivel4.SelectionChangeCommitted += new System.EventHandler(this.CbNivel4_SelectionChangeCommitted);
             // 
@@ -277,7 +277,7 @@
             this.BtnCrear5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.BtnCrear5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCrear5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.BtnCrear5.Location = new System.Drawing.Point(991, 375);
+            this.BtnCrear5.Location = new System.Drawing.Point(1030, 375);
             this.BtnCrear5.Name = "BtnCrear5";
             this.BtnCrear5.Size = new System.Drawing.Size(66, 28);
             this.BtnCrear5.TabIndex = 26;
@@ -301,9 +301,9 @@
             this.CbNivel5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CbNivel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CbNivel5.FormattingEnabled = true;
-            this.CbNivel5.Location = new System.Drawing.Point(643, 375);
+            this.CbNivel5.Location = new System.Drawing.Point(580, 375);
             this.CbNivel5.Name = "CbNivel5";
-            this.CbNivel5.Size = new System.Drawing.Size(319, 28);
+            this.CbNivel5.Size = new System.Drawing.Size(426, 28);
             this.CbNivel5.TabIndex = 24;
             this.CbNivel5.SelectionChangeCommitted += new System.EventHandler(this.CbNivel5_SelectionChangeCommitted);
             // 
@@ -312,7 +312,7 @@
             this.TxtCodigoClase.BackColor = System.Drawing.Color.WhiteSmoke;
             this.TxtCodigoClase.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtCodigoClase.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCodigoClase.Location = new System.Drawing.Point(403, 155);
+            this.TxtCodigoClase.Location = new System.Drawing.Point(360, 155);
             this.TxtCodigoClase.Name = "TxtCodigoClase";
             this.TxtCodigoClase.ReadOnly = true;
             this.TxtCodigoClase.Size = new System.Drawing.Size(187, 26);
@@ -324,7 +324,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label7.Location = new System.Drawing.Point(458, 89);
+            this.label7.Location = new System.Drawing.Point(415, 89);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(77, 24);
             this.label7.TabIndex = 29;
@@ -335,7 +335,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label8.Location = new System.Drawing.Point(760, 88);
+            this.label8.Location = new System.Drawing.Point(733, 89);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(85, 24);
             this.label8.TabIndex = 30;
@@ -346,7 +346,7 @@
             this.BtnEditar5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.BtnEditar5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEditar5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.BtnEditar5.Location = new System.Drawing.Point(1063, 375);
+            this.BtnEditar5.Location = new System.Drawing.Point(1102, 375);
             this.BtnEditar5.Name = "BtnEditar5";
             this.BtnEditar5.Size = new System.Drawing.Size(66, 28);
             this.BtnEditar5.TabIndex = 35;
@@ -359,7 +359,7 @@
             this.BtnEditar4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.BtnEditar4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEditar4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.BtnEditar4.Location = new System.Drawing.Point(1063, 319);
+            this.BtnEditar4.Location = new System.Drawing.Point(1102, 319);
             this.BtnEditar4.Name = "BtnEditar4";
             this.BtnEditar4.Size = new System.Drawing.Size(66, 28);
             this.BtnEditar4.TabIndex = 34;
@@ -372,7 +372,7 @@
             this.BtnEditar3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.BtnEditar3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEditar3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.BtnEditar3.Location = new System.Drawing.Point(1063, 265);
+            this.BtnEditar3.Location = new System.Drawing.Point(1102, 265);
             this.BtnEditar3.Name = "BtnEditar3";
             this.BtnEditar3.Size = new System.Drawing.Size(66, 28);
             this.BtnEditar3.TabIndex = 33;
@@ -385,7 +385,7 @@
             this.BtnEditar2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.BtnEditar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEditar2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.BtnEditar2.Location = new System.Drawing.Point(1063, 209);
+            this.BtnEditar2.Location = new System.Drawing.Point(1102, 209);
             this.BtnEditar2.Name = "BtnEditar2";
             this.BtnEditar2.Size = new System.Drawing.Size(66, 28);
             this.BtnEditar2.TabIndex = 32;
@@ -398,7 +398,7 @@
             this.BtnEditar1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.BtnEditar1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEditar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.BtnEditar1.Location = new System.Drawing.Point(1063, 154);
+            this.BtnEditar1.Location = new System.Drawing.Point(1102, 154);
             this.BtnEditar1.Name = "BtnEditar1";
             this.BtnEditar1.Size = new System.Drawing.Size(66, 28);
             this.BtnEditar1.TabIndex = 31;
@@ -411,7 +411,7 @@
             this.TxtCodigoGrupo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.TxtCodigoGrupo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtCodigoGrupo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCodigoGrupo.Location = new System.Drawing.Point(403, 210);
+            this.TxtCodigoGrupo.Location = new System.Drawing.Point(360, 210);
             this.TxtCodigoGrupo.Name = "TxtCodigoGrupo";
             this.TxtCodigoGrupo.ReadOnly = true;
             this.TxtCodigoGrupo.Size = new System.Drawing.Size(187, 26);
@@ -423,7 +423,7 @@
             this.TxtCodigoCuenta.BackColor = System.Drawing.Color.WhiteSmoke;
             this.TxtCodigoCuenta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtCodigoCuenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCodigoCuenta.Location = new System.Drawing.Point(403, 266);
+            this.TxtCodigoCuenta.Location = new System.Drawing.Point(360, 266);
             this.TxtCodigoCuenta.Name = "TxtCodigoCuenta";
             this.TxtCodigoCuenta.ReadOnly = true;
             this.TxtCodigoCuenta.Size = new System.Drawing.Size(187, 26);
@@ -435,7 +435,7 @@
             this.TxtCodigoSubCuenta.BackColor = System.Drawing.Color.WhiteSmoke;
             this.TxtCodigoSubCuenta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtCodigoSubCuenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCodigoSubCuenta.Location = new System.Drawing.Point(403, 320);
+            this.TxtCodigoSubCuenta.Location = new System.Drawing.Point(360, 320);
             this.TxtCodigoSubCuenta.Name = "TxtCodigoSubCuenta";
             this.TxtCodigoSubCuenta.ReadOnly = true;
             this.TxtCodigoSubCuenta.Size = new System.Drawing.Size(187, 26);
@@ -447,7 +447,7 @@
             this.TxtCodigoAuxiliar.BackColor = System.Drawing.Color.WhiteSmoke;
             this.TxtCodigoAuxiliar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtCodigoAuxiliar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCodigoAuxiliar.Location = new System.Drawing.Point(403, 376);
+            this.TxtCodigoAuxiliar.Location = new System.Drawing.Point(360, 376);
             this.TxtCodigoAuxiliar.Name = "TxtCodigoAuxiliar";
             this.TxtCodigoAuxiliar.ReadOnly = true;
             this.TxtCodigoAuxiliar.Size = new System.Drawing.Size(187, 26);
@@ -459,7 +459,7 @@
             this.BtnBorrar5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.BtnBorrar5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnBorrar5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.BtnBorrar5.Location = new System.Drawing.Point(1135, 375);
+            this.BtnBorrar5.Location = new System.Drawing.Point(1174, 375);
             this.BtnBorrar5.Name = "BtnBorrar5";
             this.BtnBorrar5.Size = new System.Drawing.Size(66, 28);
             this.BtnBorrar5.TabIndex = 44;
@@ -472,7 +472,7 @@
             this.BtnBorrar4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.BtnBorrar4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnBorrar4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.BtnBorrar4.Location = new System.Drawing.Point(1135, 319);
+            this.BtnBorrar4.Location = new System.Drawing.Point(1174, 319);
             this.BtnBorrar4.Name = "BtnBorrar4";
             this.BtnBorrar4.Size = new System.Drawing.Size(66, 28);
             this.BtnBorrar4.TabIndex = 43;
@@ -485,7 +485,7 @@
             this.BtnBorrar3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.BtnBorrar3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnBorrar3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.BtnBorrar3.Location = new System.Drawing.Point(1135, 265);
+            this.BtnBorrar3.Location = new System.Drawing.Point(1174, 265);
             this.BtnBorrar3.Name = "BtnBorrar3";
             this.BtnBorrar3.Size = new System.Drawing.Size(66, 28);
             this.BtnBorrar3.TabIndex = 42;
@@ -498,7 +498,7 @@
             this.BtnBorrar2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.BtnBorrar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnBorrar2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.BtnBorrar2.Location = new System.Drawing.Point(1135, 209);
+            this.BtnBorrar2.Location = new System.Drawing.Point(1174, 209);
             this.BtnBorrar2.Name = "BtnBorrar2";
             this.BtnBorrar2.Size = new System.Drawing.Size(66, 28);
             this.BtnBorrar2.TabIndex = 41;
@@ -511,7 +511,7 @@
             this.BtnBorrar1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.BtnBorrar1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnBorrar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.BtnBorrar1.Location = new System.Drawing.Point(1135, 154);
+            this.BtnBorrar1.Location = new System.Drawing.Point(1174, 154);
             this.BtnBorrar1.Name = "BtnBorrar1";
             this.BtnBorrar1.Size = new System.Drawing.Size(66, 28);
             this.BtnBorrar1.TabIndex = 40;
@@ -564,7 +564,7 @@
             this.RbTransaccional3.AutoSize = true;
             this.RbTransaccional3.Enabled = false;
             this.RbTransaccional3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RbTransaccional3.Location = new System.Drawing.Point(210, 265);
+            this.RbTransaccional3.Location = new System.Drawing.Point(195, 265);
             this.RbTransaccional3.Name = "RbTransaccional3";
             this.RbTransaccional3.Size = new System.Drawing.Size(146, 28);
             this.RbTransaccional3.TabIndex = 50;
@@ -577,7 +577,7 @@
             this.RbTransaccional4.AutoSize = true;
             this.RbTransaccional4.Enabled = false;
             this.RbTransaccional4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RbTransaccional4.Location = new System.Drawing.Point(210, 318);
+            this.RbTransaccional4.Location = new System.Drawing.Point(195, 318);
             this.RbTransaccional4.Name = "RbTransaccional4";
             this.RbTransaccional4.Size = new System.Drawing.Size(146, 28);
             this.RbTransaccional4.TabIndex = 51;
@@ -590,7 +590,7 @@
             this.RbTransaccional5.AutoSize = true;
             this.RbTransaccional5.Enabled = false;
             this.RbTransaccional5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RbTransaccional5.Location = new System.Drawing.Point(210, 374);
+            this.RbTransaccional5.Location = new System.Drawing.Point(195, 374);
             this.RbTransaccional5.Name = "RbTransaccional5";
             this.RbTransaccional5.Size = new System.Drawing.Size(146, 28);
             this.RbTransaccional5.TabIndex = 52;

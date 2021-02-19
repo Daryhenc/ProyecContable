@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Niveles\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Asiento\DSAsiento.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DSAsiento.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Asiento\DSAsiento.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSAsiento.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>

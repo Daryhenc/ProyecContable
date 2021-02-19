@@ -1,7 +1,4 @@
-﻿using ProyecContable.Asientos;
-using ProyecContable.Cuentas;
-using ProyecContable.Estados;
-using ProyecContable.Estados.Alerta;
+﻿using ProyecContable.Asientos.CreacionAsiento;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,16 +9,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProyecContable
+namespace ProyecContable.Asientos
 {
-    public partial class FrmPrincipal : Form
+    public partial class FrmMenuAsiento : Form
     {
-        public FrmPrincipal()
+        public FrmMenuAsiento()
         {
             InitializeComponent();
         }
-
-        ClassColorAlerta Alerta { get; set; }
 
         private Form FormActivo = null;
         private void AbrirFormulario(Form FrmHijo)
@@ -40,25 +35,20 @@ namespace ProyecContable
             FrmHijo.Show();
         }
 
-        private void Btnlv2_Click(object sender, EventArgs e)
+
+        private void BtnNuevo_Click(object sender, EventArgs e)
         {
-            ClassToast Estados = new ClassToast(ClassColorAlerta.Alerta.Validado.ToString(), "ALERTA", "Error al picar");
+            AbrirFormulario(new FrmCreacionAsiento());
+        }
+
+        private void BtnBusqueda_Click(object sender, EventArgs e)
+        {
 
         }
 
-        private void BtnCuentas_Click(object sender, EventArgs e)
+        private void BtnReporte_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(new FrmMenuCreacion());
-        }
 
-        private void Cerrar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void BtnMovimientos_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario(new FrmMenuAsiento());
         }
     }
 }

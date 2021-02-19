@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Asiento\AsientoBusqueda\ClassDgvCuentaBusqueda.cs" />
+    <Compile Include="Asiento\AsientoBusqueda\ClassDgvCuentaMovimiento.cs" />
     <Compile Include="Asiento\AsientoCuenta\CADAsientoCuenta.cs" />
     <Compile Include="Asiento\AsientoDetalle\CADAsientoDetalle.cs" />
     <Compile Include="Asiento\Comprobante\CADTipoComprobante.cs" />
@@ -60,6 +61,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DSAsientos.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Asiento\LLenarTextBox\ClassDatoTextBoxCuenta.cs" />
+    <Compile Include="Asiento\LLenarTextBox\ClassLLenarTextCodigoNom.cs" />
     <Compile Include="Niveles\CMovimiento\CADCoDMovimiento.cs" />
     <Compile Include="Niveles\Creacion\Nivel2\ClassDgvLLenar_2.cs" />
     <Compile Include="Niveles\Creacion\Nivel3\ClassDgvLlenar_3.cs" />

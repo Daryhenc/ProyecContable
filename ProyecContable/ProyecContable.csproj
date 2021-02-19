@@ -46,11 +46,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Asientos\BusquedaAsiento\FrmBusquedaAsiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Asientos\BusquedaAsiento\FrmBusquedaAsiento.Designer.cs">
+      <DependentUpon>FrmBusquedaAsiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asientos\CreacionAsiento\Actividades\ClassLlenarDgv.cs" />
+    <Compile Include="Asientos\CreacionAsiento\DatoCuenta\ClassDatoCuenta.cs" />
+    <Compile Include="Asientos\CreacionAsiento\DatoCuenta\ClassDatoCuentaAgregar.cs" />
     <Compile Include="Asientos\CreacionAsiento\FrmCreacionAsiento.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Asientos\CreacionAsiento\FrmCreacionAsiento.Designer.cs">
       <DependentUpon>FrmCreacionAsiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asientos\CreacionAsiento\GuardarAsiento\ClassGuardarAsiento.cs" />
+    <Compile Include="Asientos\CreacionAsiento\LlenarText\ClassDatoTextCuenta.cs" />
+    <Compile Include="Asientos\CreacionAsiento\LlenarText\ClassLlenarCodigo.cs" />
+    <Compile Include="Asientos\FrmMenuAsiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Asientos\FrmMenuAsiento.Designer.cs">
+      <DependentUpon>FrmMenuAsiento.cs</DependentUpon>
     </Compile>
     <Compile Include="Cuentas\CreacionCuenta\FrmCrearCuentas.cs">
       <SubType>Form</SubType>
@@ -156,8 +174,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Asientos\BusquedaAsiento\FrmBusquedaAsiento.resx">
+      <DependentUpon>FrmBusquedaAsiento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Asientos\CreacionAsiento\FrmCreacionAsiento.resx">
       <DependentUpon>FrmCreacionAsiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Asientos\FrmMenuAsiento.resx">
+      <DependentUpon>FrmMenuAsiento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cuentas\CreacionCuenta\FrmCrearCuentas.resx">
       <DependentUpon>FrmCrearCuentas.cs</DependentUpon>
@@ -244,6 +268,8 @@
   <ItemGroup>
     <Content Include="Estados\ToastIma\ok_32px.png" />
     <Content Include="Estados\ToastIma\Warning_32px.png" />
+    <None Include="Resources\delete_Icon_16px.png" />
+    <None Include="Resources\Delete_64px.png" />
     <None Include="Resources\close_window_32px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

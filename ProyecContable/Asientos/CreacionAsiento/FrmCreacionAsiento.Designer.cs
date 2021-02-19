@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCreacionAsiento));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -36,15 +35,27 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.DgvDatos = new System.Windows.Forms.DataGridView();
             this.panel8 = new System.Windows.Forms.Panel();
             this.BtnLimpiar = new System.Windows.Forms.Button();
             this.BtnGuardar = new System.Windows.Forms.Button();
+            this.TxtTotalHaber = new System.Windows.Forms.TextBox();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.TxtTotalDebe = new System.Windows.Forms.TextBox();
+            this.DgvDatos = new System.Windows.Forms.DataGridView();
+            this.Borrar = new System.Windows.Forms.DataGridViewImageColumn();
+            this.IDCodigoMovimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cuenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Debe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Haber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Concepto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel6 = new System.Windows.Forms.Panel();
             this.TxtComprobante = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.TxtConceptoGeneral = new System.Windows.Forms.TextBox();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.BtnBuscarCuenta = new System.Windows.Forms.Button();
             this.TxtHaber = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.BtnInsertar = new System.Windows.Forms.Button();
@@ -68,16 +79,9 @@
             this.RbIngreso = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.BtnBuscarCuenta = new System.Windows.Forms.Button();
-            this.Borrar = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Count = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cuenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Debe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Haber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Concepto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvDatos)).BeginInit();
             this.panel8.SuspendLayout();
+            this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvDatos)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -128,32 +132,12 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(34, 14);
+            this.label1.Location = new System.Drawing.Point(26, 13);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(141, 25);
             this.label1.TabIndex = 7;
             this.label1.Text = "Crear asiento";
-            // 
-            // DgvDatos
-            // 
-            this.DgvDatos.AllowUserToAddRows = false;
-            this.DgvDatos.AllowUserToDeleteRows = false;
-            this.DgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvDatos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Borrar,
-            this.Count,
-            this.Codigo,
-            this.Cuenta,
-            this.Debe,
-            this.Haber,
-            this.Concepto});
-            this.DgvDatos.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.DgvDatos.Location = new System.Drawing.Point(3, 390);
-            this.DgvDatos.Name = "DgvDatos";
-            this.DgvDatos.ReadOnly = true;
-            this.DgvDatos.Size = new System.Drawing.Size(1255, 290);
-            this.DgvDatos.TabIndex = 12;
             // 
             // panel8
             // 
@@ -186,6 +170,131 @@
             this.BtnGuardar.Text = "GUARDAR";
             this.BtnGuardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnGuardar.UseVisualStyleBackColor = true;
+            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
+            // 
+            // TxtTotalHaber
+            // 
+            this.TxtTotalHaber.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.TxtTotalHaber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TxtTotalHaber.Dock = System.Windows.Forms.DockStyle.Right;
+            this.TxtTotalHaber.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtTotalHaber.Location = new System.Drawing.Point(1104, 0);
+            this.TxtTotalHaber.Name = "TxtTotalHaber";
+            this.TxtTotalHaber.ReadOnly = true;
+            this.TxtTotalHaber.Size = new System.Drawing.Size(151, 38);
+            this.TxtTotalHaber.TabIndex = 26;
+            this.TxtTotalHaber.Text = "0";
+            this.TxtTotalHaber.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.HeaderText = "";
+            this.dataGridViewImageColumn1.Image = global::ProyecContable.Properties.Resources.Delete_64px;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.ReadOnly = true;
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel10.Controls.Add(this.TxtTotalDebe);
+            this.panel10.Controls.Add(this.TxtTotalHaber);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel10.Location = new System.Drawing.Point(3, 640);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(1255, 40);
+            this.panel10.TabIndex = 28;
+            // 
+            // TxtTotalDebe
+            // 
+            this.TxtTotalDebe.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.TxtTotalDebe.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TxtTotalDebe.Dock = System.Windows.Forms.DockStyle.Right;
+            this.TxtTotalDebe.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtTotalDebe.Location = new System.Drawing.Point(953, 0);
+            this.TxtTotalDebe.Name = "TxtTotalDebe";
+            this.TxtTotalDebe.ReadOnly = true;
+            this.TxtTotalDebe.Size = new System.Drawing.Size(151, 38);
+            this.TxtTotalDebe.TabIndex = 27;
+            this.TxtTotalDebe.Text = "0";
+            this.TxtTotalDebe.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // DgvDatos
+            // 
+            this.DgvDatos.AllowUserToAddRows = false;
+            this.DgvDatos.AllowUserToDeleteRows = false;
+            this.DgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvDatos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Borrar,
+            this.IDCodigoMovimiento,
+            this.Codigo,
+            this.Cuenta,
+            this.Debe,
+            this.Haber,
+            this.Concepto});
+            this.DgvDatos.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.DgvDatos.Location = new System.Drawing.Point(3, 390);
+            this.DgvDatos.Name = "DgvDatos";
+            this.DgvDatos.ReadOnly = true;
+            this.DgvDatos.Size = new System.Drawing.Size(1255, 250);
+            this.DgvDatos.TabIndex = 29;
+            this.DgvDatos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvDatos_CellClick);
+            // 
+            // Borrar
+            // 
+            this.Borrar.HeaderText = "";
+            this.Borrar.Image = global::ProyecContable.Properties.Resources.delete_Icon_16px;
+            this.Borrar.Name = "Borrar";
+            this.Borrar.ReadOnly = true;
+            // 
+            // IDCodigoMovimiento
+            // 
+            this.IDCodigoMovimiento.HeaderText = "IDCoMovimiento";
+            this.IDCodigoMovimiento.Name = "IDCodigoMovimiento";
+            this.IDCodigoMovimiento.ReadOnly = true;
+            this.IDCodigoMovimiento.Visible = false;
+            // 
+            // Codigo
+            // 
+            this.Codigo.HeaderText = "CÓDIGO. CTA.";
+            this.Codigo.Name = "Codigo";
+            this.Codigo.ReadOnly = true;
+            this.Codigo.Width = 309;
+            // 
+            // Cuenta
+            // 
+            this.Cuenta.HeaderText = "CUENTA";
+            this.Cuenta.Name = "Cuenta";
+            this.Cuenta.ReadOnly = true;
+            this.Cuenta.Width = 510;
+            // 
+            // Debe
+            // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle1.Format = "N2";
+            dataGridViewCellStyle1.NullValue = null;
+            this.Debe.DefaultCellStyle = dataGridViewCellStyle1;
+            this.Debe.HeaderText = "DEBE";
+            this.Debe.Name = "Debe";
+            this.Debe.ReadOnly = true;
+            this.Debe.Width = 146;
+            // 
+            // Haber
+            // 
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle2.Format = "N2";
+            dataGridViewCellStyle2.NullValue = null;
+            this.Haber.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Haber.HeaderText = "HABER";
+            this.Haber.Name = "Haber";
+            this.Haber.ReadOnly = true;
+            this.Haber.Width = 146;
+            // 
+            // Concepto
+            // 
+            this.Concepto.HeaderText = "CONCEPTO";
+            this.Concepto.Name = "Concepto";
+            this.Concepto.ReadOnly = true;
+            this.Concepto.Width = 430;
             // 
             // panel6
             // 
@@ -206,12 +315,13 @@
             this.panel6.Location = new System.Drawing.Point(3, 48);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1255, 342);
-            this.panel6.TabIndex = 14;
+            this.panel6.TabIndex = 30;
             // 
             // TxtComprobante
             // 
             this.TxtComprobante.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtComprobante.Location = new System.Drawing.Point(899, 33);
+            this.TxtComprobante.MaxLength = 100;
             this.TxtComprobante.Name = "TxtComprobante";
             this.TxtComprobante.Size = new System.Drawing.Size(330, 24);
             this.TxtComprobante.TabIndex = 3;
@@ -222,14 +332,15 @@
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(900, 11);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(197, 18);
+            this.label12.Size = new System.Drawing.Size(137, 18);
             this.label12.TabIndex = 18;
-            this.label12.Text = "COMPROBANTE DIARIO";
+            this.label12.Text = "COMPROBANTE";
             // 
             // TxtConceptoGeneral
             // 
             this.TxtConceptoGeneral.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtConceptoGeneral.Location = new System.Drawing.Point(26, 125);
+            this.TxtConceptoGeneral.MaxLength = 250;
             this.TxtConceptoGeneral.Name = "TxtConceptoGeneral";
             this.TxtConceptoGeneral.Size = new System.Drawing.Size(1203, 24);
             this.TxtConceptoGeneral.TabIndex = 5;
@@ -254,6 +365,18 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(1255, 181);
             this.panel7.TabIndex = 6;
+            // 
+            // BtnBuscarCuenta
+            // 
+            this.BtnBuscarCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnBuscarCuenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBuscarCuenta.Location = new System.Drawing.Point(373, 6);
+            this.BtnBuscarCuenta.Name = "BtnBuscarCuenta";
+            this.BtnBuscarCuenta.Size = new System.Drawing.Size(75, 46);
+            this.BtnBuscarCuenta.TabIndex = 24;
+            this.BtnBuscarCuenta.Text = "BUSCAR";
+            this.BtnBuscarCuenta.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnBuscarCuenta.UseVisualStyleBackColor = true;
             // 
             // TxtHaber
             // 
@@ -285,6 +408,7 @@
             this.BtnInsertar.TabIndex = 5;
             this.BtnInsertar.Text = "INSERTAR";
             this.BtnInsertar.UseVisualStyleBackColor = true;
+            this.BtnInsertar.Click += new System.EventHandler(this.BtnInsertar_Click);
             // 
             // label10
             // 
@@ -339,6 +463,7 @@
             // 
             // TxtConcepto
             // 
+            this.TxtConcepto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtConcepto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtConcepto.Location = new System.Drawing.Point(26, 74);
             this.TxtConcepto.Name = "TxtConcepto";
@@ -347,19 +472,25 @@
             // 
             // TxtNombreCuenta
             // 
+            this.TxtNombreCuenta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtNombreCuenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtNombreCuenta.Location = new System.Drawing.Point(459, 28);
             this.TxtNombreCuenta.Name = "TxtNombreCuenta";
+            this.TxtNombreCuenta.ReadOnly = true;
             this.TxtNombreCuenta.Size = new System.Drawing.Size(770, 24);
             this.TxtNombreCuenta.TabIndex = 1;
             // 
             // TxtCodigoCuenta
             // 
+            this.TxtCodigoCuenta.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.TxtCodigoCuenta.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.TxtCodigoCuenta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtCodigoCuenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtCodigoCuenta.Location = new System.Drawing.Point(26, 28);
             this.TxtCodigoCuenta.Name = "TxtCodigoCuenta";
             this.TxtCodigoCuenta.Size = new System.Drawing.Size(335, 24);
             this.TxtCodigoCuenta.TabIndex = 0;
+            this.TxtCodigoCuenta.Leave += new System.EventHandler(this.TxtCodigoCuenta_Leave);
             // 
             // label6
             // 
@@ -384,6 +515,7 @@
             // 
             this.TxtDocReferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtDocReferencia.Location = new System.Drawing.Point(26, 79);
+            this.TxtDocReferencia.MaxLength = 250;
             this.TxtDocReferencia.Name = "TxtDocReferencia";
             this.TxtDocReferencia.Size = new System.Drawing.Size(1203, 24);
             this.TxtDocReferencia.TabIndex = 4;
@@ -437,6 +569,7 @@
             this.RbCompDiario.TabStop = true;
             this.RbCompDiario.Text = "COMPROBANTE DIARIO";
             this.RbCompDiario.UseVisualStyleBackColor = true;
+            this.RbCompDiario.CheckedChanged += new System.EventHandler(this.RbCompDiario_CheckedChanged);
             // 
             // RbEgreso
             // 
@@ -449,6 +582,7 @@
             this.RbEgreso.TabStop = true;
             this.RbEgreso.Text = "EGRESO";
             this.RbEgreso.UseVisualStyleBackColor = true;
+            this.RbEgreso.CheckedChanged += new System.EventHandler(this.RbEgreso_CheckedChanged);
             // 
             // RbIngreso
             // 
@@ -461,6 +595,7 @@
             this.RbIngreso.TabStop = true;
             this.RbIngreso.Text = "INGRESO";
             this.RbIngreso.UseVisualStyleBackColor = true;
+            this.RbIngreso.CheckedChanged += new System.EventHandler(this.RbIngreso_CheckedChanged);
             // 
             // label4
             // 
@@ -482,74 +617,6 @@
             this.label3.TabIndex = 11;
             this.label3.Text = "HORA";
             // 
-            // BtnBuscarCuenta
-            // 
-            this.BtnBuscarCuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnBuscarCuenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnBuscarCuenta.Location = new System.Drawing.Point(373, 6);
-            this.BtnBuscarCuenta.Name = "BtnBuscarCuenta";
-            this.BtnBuscarCuenta.Size = new System.Drawing.Size(75, 46);
-            this.BtnBuscarCuenta.TabIndex = 24;
-            this.BtnBuscarCuenta.Text = "BUSCAR";
-            this.BtnBuscarCuenta.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BtnBuscarCuenta.UseVisualStyleBackColor = true;
-            // 
-            // Borrar
-            // 
-            this.Borrar.HeaderText = "";
-            this.Borrar.Image = ((System.Drawing.Image)(resources.GetObject("Borrar.Image")));
-            this.Borrar.Name = "Borrar";
-            this.Borrar.ReadOnly = true;
-            // 
-            // Count
-            // 
-            this.Count.HeaderText = "COUNT";
-            this.Count.Name = "Count";
-            this.Count.ReadOnly = true;
-            this.Count.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Count.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Codigo
-            // 
-            this.Codigo.HeaderText = "CÓDIGO. CTA.";
-            this.Codigo.Name = "Codigo";
-            this.Codigo.ReadOnly = true;
-            this.Codigo.Width = 200;
-            // 
-            // Cuenta
-            // 
-            this.Cuenta.HeaderText = "CUENTA";
-            this.Cuenta.Name = "Cuenta";
-            this.Cuenta.ReadOnly = true;
-            this.Cuenta.Width = 400;
-            // 
-            // Debe
-            // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle1.Format = "N2";
-            dataGridViewCellStyle1.NullValue = null;
-            this.Debe.DefaultCellStyle = dataGridViewCellStyle1;
-            this.Debe.HeaderText = "DEBE";
-            this.Debe.Name = "Debe";
-            this.Debe.ReadOnly = true;
-            // 
-            // Haber
-            // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle2.Format = "N2";
-            dataGridViewCellStyle2.NullValue = null;
-            this.Haber.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Haber.HeaderText = "HABER";
-            this.Haber.Name = "Haber";
-            this.Haber.ReadOnly = true;
-            // 
-            // Concepto
-            // 
-            this.Concepto.HeaderText = "CONCEPTO";
-            this.Concepto.Name = "Concepto";
-            this.Concepto.ReadOnly = true;
-            this.Concepto.Width = 300;
-            // 
             // FrmCreacionAsiento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -557,8 +624,9 @@
             this.ClientSize = new System.Drawing.Size(1261, 780);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.DgvDatos);
-            this.Controls.Add(this.panel8);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel10);
+            this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -569,8 +637,10 @@
             this.Name = "FrmCreacionAsiento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmCreacionAsiento";
-            ((System.ComponentModel.ISupportInitialize)(this.DgvDatos)).EndInit();
             this.panel8.ResumeLayout(false);
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvDatos)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel7.ResumeLayout(false);
@@ -589,15 +659,27 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView DgvDatos;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Button BtnLimpiar;
         private System.Windows.Forms.Button BtnGuardar;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
+        private System.Windows.Forms.TextBox TxtTotalHaber;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.TextBox TxtTotalDebe;
+        private System.Windows.Forms.DataGridView DgvDatos;
+        private System.Windows.Forms.DataGridViewImageColumn Borrar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IDCodigoMovimiento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cuenta;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Debe;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Haber;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Concepto;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.TextBox TxtComprobante;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox TxtConceptoGeneral;
         private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Button BtnBuscarCuenta;
         private System.Windows.Forms.TextBox TxtHaber;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button BtnInsertar;
@@ -621,13 +703,5 @@
         private System.Windows.Forms.RadioButton RbIngreso;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button BtnBuscarCuenta;
-        private System.Windows.Forms.DataGridViewImageColumn Borrar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Count;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Cuenta;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Debe;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Haber;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Concepto;
     }
 }

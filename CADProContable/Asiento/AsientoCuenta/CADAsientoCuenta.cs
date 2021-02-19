@@ -1,14 +1,15 @@
 ﻿using CADProContable.Asiento.DSAsientosTableAdapters;
+using System;
 
 namespace CADProContable.Asiento.AsientoCuenta
 {
     public class CADAsientoCuenta
     {
 
-        AsientoCuentasTableAdapter adapter = new AsientoCuentasTableAdapter();
-        public void InsertAsientoCuentas(int IDAsiento, int IDCuentaMovimiento, string Concepto, decimal Debe, decimal Haber)
+        AsientoCuentaTableAdapter adapter = new AsientoCuentaTableAdapter();
+        public void InsertAsientoCuenta(int IDAsiento, int IDCuentaMovimiento, string Concepto, decimal Debe, decimal Haber)
         {
-            adapter.InsertAsientoCuentas(IDAsiento, IDCuentaMovimiento, Concepto, Debe, Haber);
+              adapter.InsertAsientoCuenta(IDAsiento, IDCuentaMovimiento, Concepto, Debe, Haber);
         }
 
 
