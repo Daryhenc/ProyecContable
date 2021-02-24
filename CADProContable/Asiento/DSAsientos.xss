@@ -10,7 +10,8 @@
     <Shape ID="DesignTable:AsientoCuenta" ZOrder="6" X="704" Y="94" Height="229" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="140" />
     <Shape ID="DesignTable:AsientoDetalle" ZOrder="5" X="321" Y="86" Height="229" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="140" />
     <Shape ID="DesignTable:BusquedaAsiento" ZOrder="3" X="705" Y="360" Height="248" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="140" />
-    <Shape ID="DesignTable:BusquedaAsientoCuenta" ZOrder="1" X="1054" Y="360" Height="172" Width="242" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="121" />
+    <Shape ID="DesignTable:BusquedaAsientoCuenta" ZOrder="2" X="1054" Y="360" Height="172" Width="242" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="121" />
+    <Shape ID="DesignTable:BusquedaCuenta" ZOrder="1" X="1050" Y="95" Height="191" Width="242" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="140" />
   </Shapes>
   <Connectors>
     <Connector ID="DesignRelation:FK_AsientoCuenta_AsientoDetalle" ZOrder="4" LineWidth="11">
@@ -22,18 +23,6 @@
         <Point>
           <X>704</X>
           <Y>138</Y>
-        </Point>
-      </RoutePoints>
-    </Connector>
-    <Connector ID="DesignRelation:FK_AsientoCuenta_AsientoDetalle1" ZOrder="2" LineWidth="11">
-      <RoutePoints>
-        <Point>
-          <X>810</X>
-          <Y>360</Y>
-        </Point>
-        <Point>
-          <X>810</X>
-          <Y>323</Y>
         </Point>
       </RoutePoints>
     </Connector>

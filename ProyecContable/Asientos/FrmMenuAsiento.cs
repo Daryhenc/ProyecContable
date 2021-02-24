@@ -1,12 +1,6 @@
-﻿using ProyecContable.Asientos.CreacionAsiento;
+﻿using ProyecContable.Asientos.BusquedaAsiento;
+using ProyecContable.Asientos.CreacionAsiento;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProyecContable.Asientos
@@ -16,6 +10,7 @@ namespace ProyecContable.Asientos
         public FrmMenuAsiento()
         {
             InitializeComponent();
+            MensajesDeBotones();
         }
 
         private Form FormActivo = null;
@@ -43,11 +38,20 @@ namespace ProyecContable.Asientos
 
         private void BtnBusqueda_Click(object sender, EventArgs e)
         {
-
+            AbrirFormulario(new FrmBusquedaAsiento());
         }
 
         private void BtnReporte_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void MensajesDeBotones()
+        {
+
+            TTMensasje.SetToolTip(this.BtnNuevo, "CREAR ASIENTOS");
+            TTMensasje.SetToolTip(this.BtnReporte, "REPORTE DE ASIENTOS");
+            TTMensasje.SetToolTip(this.BtnBusqueda, "BUSCAR ASIENTOS.");
 
         }
     }

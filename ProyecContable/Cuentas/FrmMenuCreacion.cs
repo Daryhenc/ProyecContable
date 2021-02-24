@@ -1,4 +1,5 @@
 ﻿using ProyecContable.Cuentas.CreacionCuenta;
+using ProyecContable.Cuentas.CreacionRetencion;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -46,14 +47,19 @@ namespace ProyecContable.Cuentas
             AbrirFormulario(new FrmReporteCuentaContable());
         }
 
-
+        private void BtnReteNuevo_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new FrmCrearRetencione());
+        }
         private void MensajesDeBotones()
         {
 
             TTMensasje.SetToolTip(this.BtnNuevo, "CREAR NUEVAS CUENTAS CONTABLES");
             TTMensasje.SetToolTip(this.BtnReporte, "REPORTE CUENTA CONTABLE.");
-
+            TTMensasje.SetToolTip(this.BtnReteNuevo, "CREAR RETENCIONES.");
 
         }
+
+
     }
 }

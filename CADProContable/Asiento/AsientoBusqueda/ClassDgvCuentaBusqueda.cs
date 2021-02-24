@@ -1,12 +1,6 @@
 ﻿using CADProContable.Asiento.DSAsientosTableAdapters;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using static CADProContable.Asiento.DSAsientos;
-using static CADProContable.Asiento.DSAsientosa;
 
 namespace CADProContable.Asiento.AsientoBusqueda
 {

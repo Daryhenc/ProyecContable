@@ -32,9 +32,11 @@ namespace CADProContable.Asiento {
     }
 }
 
-namespace CADProContable.DSAsientosTableAdapters {
-    
-    
-    public partial class BusquedaAsientoCuentaTableAdapter {
+namespace CADProContable.Asiento.DSAsientosTableAdapters
+{
+
+
+    public partial class BusquedaAsientoCuentaTableAdapter
+    {
     }
 }

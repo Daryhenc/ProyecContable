@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Asiento\AsientoBusqueda\ClassDgvCuentaBusqueda.cs" />
     <Compile Include="Asiento\AsientoBusqueda\ClassDgvCuentaMovimiento.cs" />
+    <Compile Include="Asiento\AsientoBusqueda\ClassDgvLlenarBusquedaCuenta.cs" />
     <Compile Include="Asiento\AsientoCuenta\CADAsientoCuenta.cs" />
     <Compile Include="Asiento\AsientoDetalle\CADAsientoDetalle.cs" />
     <Compile Include="Asiento\Comprobante\CADTipoComprobante.cs" />
@@ -96,6 +97,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DSReporteCuenta.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Niveles\Retencion\CADRetencion.cs" />
+    <Compile Include="Niveles\Retencion\ClassDgvRetencion.cs" />
+    <Compile Include="Niveles\Retencion\ClassLlenarCbRetencion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>

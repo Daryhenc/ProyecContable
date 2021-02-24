@@ -34,7 +34,6 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.BtnMovimientos = new System.Windows.Forms.Button();
             this.BtnCuentas = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -88,7 +87,6 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.DodgerBlue;
-            this.panel7.Controls.Add(this.button1);
             this.panel7.Controls.Add(this.BtnMovimientos);
             this.panel7.Controls.Add(this.BtnCuentas);
             this.panel7.Controls.Add(this.panel10);
@@ -99,20 +97,6 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(163, 840);
             this.panel7.TabIndex = 8;
-            // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(0, 392);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(163, 89);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "OTROS";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // BtnMovimientos
             // 
@@ -125,7 +109,7 @@
             this.BtnMovimientos.Name = "BtnMovimientos";
             this.BtnMovimientos.Size = new System.Drawing.Size(163, 89);
             this.BtnMovimientos.TabIndex = 5;
-            this.BtnMovimientos.Text = "MOVIMIENTOS";
+            this.BtnMovimientos.Text = "ASIENTO";
             this.BtnMovimientos.UseVisualStyleBackColor = true;
             this.BtnMovimientos.Click += new System.EventHandler(this.BtnMovimientos_Click);
             // 
@@ -244,7 +228,6 @@
         private System.Windows.Forms.Button BtnCuentas;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel PanelContenedorHijo;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button BtnMovimientos;
     }
 }

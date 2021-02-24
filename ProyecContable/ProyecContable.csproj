@@ -33,7 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -70,6 +72,12 @@
     <Compile Include="Asientos\FrmMenuAsiento.Designer.cs">
       <DependentUpon>FrmMenuAsiento.cs</DependentUpon>
     </Compile>
+    <Compile Include="BusquedaGeneral\FrmBusquedaCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusquedaGeneral\FrmBusquedaCuenta.Designer.cs">
+      <DependentUpon>FrmBusquedaCuenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cuentas\CreacionCuenta\FrmCrearCuentas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +107,12 @@
     </Compile>
     <Compile Include="Cuentas\CreacionCuenta\FrmReporteCuentaContable.Designer.cs">
       <DependentUpon>FrmReporteCuentaContable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cuentas\CreacionRetencion\FrmCrearRetencione.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuentas\CreacionRetencion\FrmCrearRetencione.Designer.cs">
+      <DependentUpon>FrmCrearRetencione.cs</DependentUpon>
     </Compile>
     <Compile Include="Cuentas\FrmMenuCreacion.cs">
       <SubType>Form</SubType>
@@ -183,6 +197,9 @@
     <EmbeddedResource Include="Asientos\FrmMenuAsiento.resx">
       <DependentUpon>FrmMenuAsiento.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BusquedaGeneral\FrmBusquedaCuenta.resx">
+      <DependentUpon>FrmBusquedaCuenta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cuentas\CreacionCuenta\FrmCrearCuentas.resx">
       <DependentUpon>FrmCrearCuentas.cs</DependentUpon>
     </EmbeddedResource>
@@ -197,6 +214,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cuentas\CreacionCuenta\FrmReporteCuentaContable.resx">
       <DependentUpon>FrmReporteCuentaContable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuentas\CreacionRetencion\FrmCrearRetencione.resx">
+      <DependentUpon>FrmCrearRetencione.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cuentas\FrmMenuCreacion.resx">
       <DependentUpon>FrmMenuCreacion.cs</DependentUpon>
@@ -254,7 +274,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Cuentas\CreacionRetencion\Editar\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CADProContable\CADProContable.csproj">
       <Project>{90cd5d01-4863-4e28-bb76-4c54f94e9183}</Project>

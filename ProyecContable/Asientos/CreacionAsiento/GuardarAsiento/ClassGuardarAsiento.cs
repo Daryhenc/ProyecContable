@@ -21,7 +21,7 @@ namespace ProyecContable.Asientos.CreacionAsiento.GuardarAsiento
             for (int i = 0; i < ListDatos.Count; i++)
             {
                 GuardarCuenta.InsertAsientoCuenta(IDAsiento, ListDatos[i].IDCuentaMovimiento, 
-                ListDatos[i].Concepto, ListDatos[i].Debe, ListDatos[i].Haber);
+                ListDatos[i].Concepto.ToUpper(), ListDatos[i].Debe, ListDatos[i].Haber);
             }
         }
 

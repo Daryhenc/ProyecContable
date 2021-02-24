@@ -12,7 +12,10 @@ namespace CADProContable.Asiento.AsientoCuenta
               adapter.InsertAsientoCuenta(IDAsiento, IDCuentaMovimiento, Concepto, Debe, Haber);
         }
 
-
+        public void DeleteAsientoCuenta(int IDAsiento)
+        {
+            adapter.DeleteAsientoCuenta(IDAsiento);
+        }
 
     }
 }

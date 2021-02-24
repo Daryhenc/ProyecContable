@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenuAsiento));
             this.PanelContenedorHijo = new System.Windows.Forms.Panel();
             this.PanelMenuCerrar = new System.Windows.Forms.Panel();
@@ -35,6 +36,7 @@
             this.BtnBusqueda = new System.Windows.Forms.Button();
             this.BtnNuevo = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.TTMensasje = new System.Windows.Forms.ToolTip(this.components);
             this.PanelMenuCerrar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -134,5 +136,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button BtnReporte;
         private System.Windows.Forms.Button BtnBusqueda;
+        private System.Windows.Forms.ToolTip TTMensasje;
     }
 }

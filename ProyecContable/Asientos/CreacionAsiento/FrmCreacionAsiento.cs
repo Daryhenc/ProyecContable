@@ -2,6 +2,7 @@
 using ProyecContable.Asientos.CreacionAsiento.DatoCuenta;
 using ProyecContable.Asientos.CreacionAsiento.GuardarAsiento;
 using ProyecContable.Asientos.CreacionAsiento.LlenarText;
+using ProyecContable.BusquedaGeneral;
 using ProyecContable.Estados;
 using ProyecContable.Estados.Alerta;
 using System;
@@ -27,6 +28,7 @@ namespace ProyecContable.Asientos.CreacionAsiento
         ClassToast Alerta { get; set; }
         ClassLlenarDgv LlenarDgv { get; set; }
         int Estado;
+
         private void TxtDebe_Leave(object sender, EventArgs e)
         {
             try
@@ -83,7 +85,6 @@ namespace ProyecContable.Asientos.CreacionAsiento
         }
 
      
-
         private void DgvDatos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (DgvDatos.CurrentRow == null)
@@ -173,20 +174,25 @@ namespace ProyecContable.Asientos.CreacionAsiento
 
             string Fecha = TxtFecha.Value.Date.ToString("dd-MM-yyyy ") + TxtHora.Value.ToLongTimeString();
             ClassGuardarAsiento Guardar = new ClassGuardarAsiento();
-            Guardar.GuardarAsientoContable(Estado, Convert.ToInt32(TxtComprobante.Text), TxtDocReferencia.Text.ToUpper(), TxtConceptoGeneral.Text.ToUpper(), 
-            ListDatos, Convert.ToDateTime(Fecha));
 
-            TxtFecha.Value = DateTime.Now;
-            TxtHora.Value = DateTime.Now;
-            TxtDocReferencia.Text = null;
-            TxtConceptoGeneral.Text = null;
-            TxtComprobante.Text = null;
-            ListDatos.Clear();
-            DgvDatos.Rows.Clear();
-            LlenarDgv = new ClassLlenarDgv();
-            LlenarDgv.TDebeHaber(ListDatos, TxtTotalDebe, TxtTotalHaber);
+            FrmPregunta FrmGuardar = new FrmPregunta();
+            FrmGuardar.ShowDialog();
+            if (FrmGuardar.Estado == true)
+            {
+                Guardar.GuardarAsientoContable(Estado, Convert.ToInt32(TxtComprobante.Text), TxtDocReferencia.Text.ToUpper(), TxtConceptoGeneral.Text.ToUpper(),
+                ListDatos, Convert.ToDateTime(Fecha));
 
-            Alerta = new ClassToast(ClassColorAlerta.Alerta.Guardado.ToString(), "GUARDADO", "Registro guardado perfectamente.");
+                TxtFecha.Value = DateTime.Now;
+                TxtHora.Value = DateTime.Now;
+                TxtDocReferencia.Text = null;
+                TxtConceptoGeneral.Text = null;
+                TxtComprobante.Text = null;
+                ListDatos.Clear();
+                DgvDatos.Rows.Clear();
+                LlenarDgv = new ClassLlenarDgv();
+                LlenarDgv.TDebeHaber(ListDatos, TxtTotalDebe, TxtTotalHaber);
+                Alerta = new ClassToast(ClassColorAlerta.Alerta.Guardado.ToString(), "GUARDADO", "Registro guardado perfectamente.");
+            }
         }
 
 
@@ -226,6 +232,27 @@ namespace ProyecContable.Asientos.CreacionAsiento
             {
                 Estado = 3;
                 return;
+            }
+        }
+
+        private void BtnBuscarCuenta_Click(object sender, EventArgs e)
+        {
+            FrmBusquedaCuenta Busqueda = new FrmBusquedaCuenta();
+            Busqueda.ShowDialog();
+            if (Busqueda.Estado == true)
+            {
+                DatoCuenta.IDCuentaMovimiento = Busqueda.IDCuentaMovimiento;
+                DatoCuenta.Nombre = Busqueda.Nombre;
+                DatoCuenta.Codigo = Busqueda.Codigo;
+                TxtNombreCuenta.Text = Busqueda.Nombre;
+                TxtCodigoCuenta.Text = Busqueda.Codigo;
+            }
+            else
+            {
+                DatoCuenta.IDCuentaMovimiento = 0;
+                DatoCuenta.Nombre = null;
+                DatoCuenta.Codigo = null;
+                TxtNombreCuenta.Text = "";
             }
         }
     }

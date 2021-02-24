@@ -31,11 +31,12 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenuCreacion));
             this.PanelMenuCerrar = new System.Windows.Forms.Panel();
-            this.BtnReporte = new System.Windows.Forms.Button();
             this.BtnNuevo = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.PanelContenedorHijo = new System.Windows.Forms.Panel();
             this.TTMensasje = new System.Windows.Forms.ToolTip(this.components);
+            this.BtnReteNuevo = new System.Windows.Forms.Button();
+            this.BtnReporte = new System.Windows.Forms.Button();
             this.PanelMenuCerrar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -43,6 +44,7 @@
             // 
             this.PanelMenuCerrar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.PanelMenuCerrar.Controls.Add(this.BtnReporte);
+            this.PanelMenuCerrar.Controls.Add(this.BtnReteNuevo);
             this.PanelMenuCerrar.Controls.Add(this.BtnNuevo);
             this.PanelMenuCerrar.Controls.Add(this.label2);
             this.PanelMenuCerrar.Dock = System.Windows.Forms.DockStyle.Top;
@@ -50,19 +52,6 @@
             this.PanelMenuCerrar.Name = "PanelMenuCerrar";
             this.PanelMenuCerrar.Size = new System.Drawing.Size(1261, 61);
             this.PanelMenuCerrar.TabIndex = 240;
-            // 
-            // BtnReporte
-            // 
-            this.BtnReporte.Dock = System.Windows.Forms.DockStyle.Right;
-            this.BtnReporte.FlatAppearance.BorderSize = 0;
-            this.BtnReporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnReporte.Image = ((System.Drawing.Image)(resources.GetObject("BtnReporte.Image")));
-            this.BtnReporte.Location = new System.Drawing.Point(1101, 0);
-            this.BtnReporte.Name = "BtnReporte";
-            this.BtnReporte.Size = new System.Drawing.Size(80, 61);
-            this.BtnReporte.TabIndex = 4;
-            this.BtnReporte.UseVisualStyleBackColor = true;
-            this.BtnReporte.Click += new System.EventHandler(this.BtnReporte_Click);
             // 
             // BtnNuevo
             // 
@@ -97,6 +86,32 @@
             this.PanelContenedorHijo.Size = new System.Drawing.Size(1261, 779);
             this.PanelContenedorHijo.TabIndex = 241;
             // 
+            // BtnReteNuevo
+            // 
+            this.BtnReteNuevo.Dock = System.Windows.Forms.DockStyle.Right;
+            this.BtnReteNuevo.FlatAppearance.BorderSize = 0;
+            this.BtnReteNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnReteNuevo.Image = ((System.Drawing.Image)(resources.GetObject("BtnReteNuevo.Image")));
+            this.BtnReteNuevo.Location = new System.Drawing.Point(1101, 0);
+            this.BtnReteNuevo.Name = "BtnReteNuevo";
+            this.BtnReteNuevo.Size = new System.Drawing.Size(80, 61);
+            this.BtnReteNuevo.TabIndex = 5;
+            this.BtnReteNuevo.UseVisualStyleBackColor = true;
+            this.BtnReteNuevo.Click += new System.EventHandler(this.BtnReteNuevo_Click);
+            // 
+            // BtnReporte
+            // 
+            this.BtnReporte.Dock = System.Windows.Forms.DockStyle.Right;
+            this.BtnReporte.FlatAppearance.BorderSize = 0;
+            this.BtnReporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnReporte.Image = ((System.Drawing.Image)(resources.GetObject("BtnReporte.Image")));
+            this.BtnReporte.Location = new System.Drawing.Point(1021, 0);
+            this.BtnReporte.Name = "BtnReporte";
+            this.BtnReporte.Size = new System.Drawing.Size(80, 61);
+            this.BtnReporte.TabIndex = 6;
+            this.BtnReporte.UseVisualStyleBackColor = true;
+            this.BtnReporte.Click += new System.EventHandler(this.BtnReporte_Click);
+            // 
             // FrmMenuCreacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -118,9 +133,10 @@
 
         private System.Windows.Forms.Panel PanelMenuCerrar;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button BtnReporte;
         private System.Windows.Forms.Button BtnNuevo;
         private System.Windows.Forms.Panel PanelContenedorHijo;
         private System.Windows.Forms.ToolTip TTMensasje;
+        private System.Windows.Forms.Button BtnReteNuevo;
+        private System.Windows.Forms.Button BtnReporte;
     }
 }
